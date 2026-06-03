@@ -19,7 +19,6 @@ html {
 body {
   margin: 0;
   font-family: Inter, system-ui, sans-serif;
-
   background:
     radial-gradient(
       circle at top left,
@@ -27,7 +26,6 @@ body {
       transparent 30%
     ),
     #faf7f0;
-
   color: var(--text);
   line-height: 1.7;
 }
@@ -40,20 +38,15 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-
   background: rgba(250,247,240,0.95);
-
   backdrop-filter: blur(12px);
-
   border-bottom: 1px solid var(--border);
 }
 
 .nav {
   max-width: 1150px;
   margin: auto;
-
   padding: 20px 24px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,12 +54,9 @@ a {
 
 .logo {
   text-decoration: none;
-
   font-size: 1.15rem;
   font-weight: 900;
-
   color: var(--accent);
-
   letter-spacing: -0.04em;
 }
 
@@ -92,24 +82,17 @@ main {
 
 .hero {
   min-height: 85vh;
-
   display: grid;
   grid-template-columns: 1.5fr 0.9fr;
-
   gap: 40px;
-
   align-items: center;
 }
 
 .eyebrow {
   color: var(--accent);
-
   text-transform: uppercase;
-
   letter-spacing: 0.18em;
-
   font-size: 0.75rem;
-
   font-weight: 900;
 }
 
@@ -153,16 +136,11 @@ h3 {
 
 .button {
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
-
   padding: 14px 22px;
-
   border-radius: 999px;
-
   text-decoration: none;
-
   font-weight: 700;
 }
 
@@ -172,7 +150,6 @@ h3 {
     #d4af37,
     #c9a227
   );
-
   color: white;
 }
 
@@ -185,22 +162,16 @@ h3 {
 .note-card,
 .journal-card {
   background: white;
-
   border-radius: 28px;
-
   border: 1px solid rgba(201,162,39,0.15);
-
   padding: 28px;
-
   box-shadow:
     0 10px 30px rgba(0,0,0,0.05);
 }
 
 .hero-card {
   text-decoration: none;
-
   transform: rotate(1deg);
-
   transition: 0.25s ease;
 }
 
@@ -210,7 +181,6 @@ h3 {
 
 .section {
   padding: 90px 0;
-
   border-top: 1px solid var(--border);
 }
 
@@ -221,89 +191,79 @@ h3 {
 .about-layout {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-
   gap: 40px;
-
   align-items: center;
 }
 
 .profile-photo {
   width: 100%;
-
   max-width: 360px;
-
   border-radius: 30px;
-
   border: 1px solid var(--border);
-
   box-shadow:
     0 18px 40px rgba(0,0,0,0.08);
 }
 
 .collection-grid {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
-
   gap: 20px;
 }
 
 .collection-card {
   text-decoration: none;
-
   min-height: 230px;
-
   transition: 0.25s ease;
 }
 
 .collection-card:hover {
   transform: translateY(-8px);
-
   background: #fffdf6;
 }
 
 .collection-card span {
   color: var(--accent);
-
   font-weight: 900;
 }
 
-.gallery {
-  columns: 2 300px;
-
-  column-gap: 20px;
+.photo-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 8px 0 22px;
 }
 
-.gallery img {
-  width: 100%;
-
-  height: auto;
-
-  margin-bottom: 20px;
-
-  border-radius: 20px;
-
-  display: block;
-
-  break-inside: avoid;
-
+.photo-slider img {
+  flex: 0 0 72%;
+  max-width: 560px;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 24px;
+  scroll-snap-align: start;
   border: 1px solid rgba(201,162,39,0.12);
-
   box-shadow:
     0 10px 25px rgba(0,0,0,0.08);
-
-  transition: transform 0.25s ease;
+  display: block;
 }
 
-.gallery img:hover {
-  transform: scale(1.015);
+.photo-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.photo-slider::-webkit-scrollbar-track {
+  background: rgba(201,162,39,0.12);
+  border-radius: 999px;
+}
+
+.photo-slider::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 999px;
 }
 
 .split-section {
   display: grid;
-
   grid-template-columns: 0.8fr 1.2fr;
-
   gap: 30px;
 }
 
@@ -313,21 +273,15 @@ h3 {
 
 .journal-grid {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-
   gap: 20px;
 }
 
 footer {
   max-width: 1150px;
-
   margin: auto;
-
   padding: 30px 24px 50px;
-
   color: var(--muted);
-
   border-top: 1px solid var(--border);
 }
 
@@ -356,8 +310,9 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .gallery {
-    columns: 1;
+  .photo-slider img {
+    flex: 0 0 88%;
+    height: 360px;
   }
 
   .section {
