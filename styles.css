@@ -338,3 +338,34 @@ footer {
   font: inherit;
   cursor: pointer;
 }
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.language-btn {
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--text);
+  padding: 7px 10px;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.82rem;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  transition: 0.2s ease;
+}
+
+.language-btn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(201,162,39,0.4);
+}
+
+.language-btn.active {
+  background: linear-gradient(135deg, #d4af37, #c9a227);
+  color: white;
+  border-color: transparent;
+}
