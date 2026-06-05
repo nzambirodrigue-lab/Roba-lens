@@ -14,9 +14,18 @@
       <a class="logo" href="#">RobaLens.</a>
 
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#journal">Journal</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#portfolio" data-i18n="navPortfolio">Portfolio</a>
+        <a href="#journal" data-i18n="navJournal">Journal</a>
+
+        <div class="language-switcher">
+          <select id="languageSelect">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="ro">Română</option>
+            <option value="de">Deutsch</option>
+          </select>
+        </div>
       </div>
     </nav>
   </header>
@@ -24,39 +33,39 @@
   <main>
     <section class="hero">
       <div class="hero-content">
-        <p class="eyebrow">Visual stories by Rodrigue Nzambi</p>
-        <h1>Photography, people, places & moments worth remembering.</h1>
+        <p class="eyebrow" data-i18n="heroEyebrow">Visual stories by Rodrigue Nzambi</p>
+        <h1 data-i18n="heroTitle">Photography, people, places & moments worth remembering.</h1>
 
-        <p class="hero-text">
+        <p class="hero-text" data-i18n="heroText">
           RobaLens. is my creative space for sharing portraits, lifestyle moments,
           events, and the small stories I capture through my lens.
         </p>
 
         <div class="hero-actions">
-          <a class="button primary" href="#portfolio">Explore the Work</a>
-          <a class="button secondary" href="#journal">Read the Journal</a>
+          <a class="button primary" href="#portfolio" data-i18n="exploreBtn">Explore the Work</a>
+          <a class="button secondary" href="#journal" data-i18n="journalBtn">Read the Journal</a>
         </div>
       </div>
 
       <a class="hero-card" href="#lifestyle">
-        <p class="eyebrow">Latest collection</p>
-        <h2>Lifestyle moments</h2>
-        <p>Click to view a few recent shots.</p>
+        <p class="eyebrow" data-i18n="latestCollection">Latest collection</p>
+        <h2 data-i18n="lifestyleMoments">Lifestyle moments</h2>
+        <p data-i18n="clickView">Click to view a few recent shots.</p>
       </a>
     </section>
 
     <section id="about" class="section about-layout">
       <div>
-        <p class="eyebrow">About</p>
-        <h2>A personal visual journal</h2>
+        <p class="eyebrow" data-i18n="aboutEyebrow">About</p>
+        <h2 data-i18n="aboutTitle">A personal visual journal</h2>
 
-        <p>
+        <p data-i18n="aboutText1">
           I started carrying a camera because I enjoyed documenting the people and moments
           around me. Over time, photography became a way to slow down, notice details,
           and tell stories without needing too many words.
         </p>
 
-        <p>
+        <p data-i18n="aboutText2">
           This website is not a shop or a booking page. It is a place where I collect my
           favorite images, experiments, memories, and creative progress.
         </p>
@@ -67,9 +76,9 @@
 
     <section id="portfolio" class="section">
       <div class="section-heading">
-        <p class="eyebrow">Portfolio</p>
-        <h2>Collections</h2>
-        <p class="section-intro">
+        <p class="eyebrow" data-i18n="portfolioEyebrow">Portfolio</p>
+        <h2 data-i18n="collectionsTitle">Collections</h2>
+        <p class="section-intro" data-i18n="collectionsIntro">
           Browse the different kinds of moments I enjoy capturing.
         </p>
       </div>
@@ -77,35 +86,35 @@
       <div class="collection-grid">
         <a class="collection-card" href="#lifestyle">
           <span>01</span>
-          <h3>Lifestyle</h3>
-          <p>Natural moments, movement, street energy, and everyday stories.</p>
+          <h3 data-i18n="lifestyleTitle">Lifestyle</h3>
+          <p data-i18n="lifestyleDesc">Natural moments, movement, street energy, and everyday stories.</p>
         </a>
 
         <a class="collection-card" href="#portraits">
           <span>02</span>
-          <h3>Portraits</h3>
-          <p>People, expressions, confidence, personality, and quiet emotion.</p>
+          <h3 data-i18n="portraitsTitle">Portraits</h3>
+          <p data-i18n="portraitsDesc">People, expressions, confidence, personality, and quiet emotion.</p>
         </a>
 
         <a class="collection-card" href="#events">
           <span>03</span>
-          <h3>Events</h3>
-          <p>Celebrations, gatherings, details, and memories with atmosphere.</p>
+          <h3 data-i18n="eventsTitle">Events</h3>
+          <p data-i18n="eventsDesc">Celebrations, gatherings, details, and memories with atmosphere.</p>
         </a>
 
         <a class="collection-card" href="#journal">
           <span>04</span>
-          <h3>Journal</h3>
-          <p>Short notes, behind-the-scenes thoughts, and photo stories.</p>
+          <h3 data-i18n="journalTitle">Journal</h3>
+          <p data-i18n="journalDesc">Short notes, behind-the-scenes thoughts, and photo stories.</p>
         </a>
       </div>
     </section>
 
     <section id="lifestyle" class="section">
       <div class="section-heading">
-        <p class="eyebrow">Collection 01</p>
-        <h2>Lifestyle</h2>
-        <p class="section-intro">
+        <p class="eyebrow" data-i18n="collectionOne">Collection 01</p>
+        <h2 data-i18n="lifestyleTitle">Lifestyle</h2>
+        <p class="section-intro" data-i18n="lifestyleIntro">
           A small collection of relaxed portraits, everyday scenes, and spontaneous moments.
           Swipe or scroll sideways to explore.
         </p>
@@ -121,12 +130,12 @@
 
     <section id="portraits" class="section split-section">
       <div>
-        <p class="eyebrow">Collection 02</p>
-        <h2>Portraits</h2>
+        <p class="eyebrow" data-i18n="collectionTwo">Collection 02</p>
+        <h2 data-i18n="portraitsTitle">Portraits</h2>
       </div>
 
       <div class="note-card">
-        <p>
+        <p data-i18n="portraitsNote">
           Portrait work will live here soon. For now, this section is a reminder to keep
           experimenting with light, expression, and personality.
         </p>
@@ -135,12 +144,12 @@
 
     <section id="events" class="section split-section">
       <div>
-        <p class="eyebrow">Collection 03</p>
-        <h2>Events</h2>
+        <p class="eyebrow" data-i18n="collectionThree">Collection 03</p>
+        <h2 data-i18n="eventsTitle">Events</h2>
       </div>
 
       <div class="note-card">
-        <p>
+        <p data-i18n="eventsNote">
           Event stories will be added here as the collection grows — birthdays, gatherings,
           celebrations, and real moments with people.
         </p>
@@ -149,33 +158,33 @@
 
     <section id="journal" class="section">
       <div class="section-heading">
-        <p class="eyebrow">Journal</p>
-        <h2>Notes from behind the lens</h2>
+        <p class="eyebrow" data-i18n="journalTitle">Journal</p>
+        <h2 data-i18n="journalHeading">Notes from behind the lens</h2>
       </div>
 
       <div class="journal-grid">
         <article class="journal-card">
-          <p class="eyebrow">Entry 01</p>
-          <h3>Learning to see differently</h3>
-          <p>
+          <p class="eyebrow" data-i18n="entryOne">Entry 01</p>
+          <h3 data-i18n="journalOneTitle">Learning to see differently</h3>
+          <p data-i18n="journalOneText">
             Photography has made me pay attention to small details: light on a face,
             movement in a street, and quiet moments between people.
           </p>
         </article>
 
         <article class="journal-card">
-          <p class="eyebrow">Entry 02</p>
-          <h3>Friends, family & practice</h3>
-          <p>
+          <p class="eyebrow" data-i18n="entryTwo">Entry 02</p>
+          <h3 data-i18n="journalTwoTitle">Friends, family & practice</h3>
+          <p data-i18n="journalTwoText">
             Most of my favorite images start casually — no big setup, just someone being
             themselves while I try to catch the feeling.
           </p>
         </article>
 
         <article class="journal-card">
-          <p class="eyebrow">Entry 03</p>
-          <h3>Building the eye</h3>
-          <p>
+          <p class="eyebrow" data-i18n="entryThree">Entry 03</p>
+          <h3 data-i18n="journalThreeTitle">Building the eye</h3>
+          <p data-i18n="journalThreeText">
             This space will grow as I shoot more, learn more, and discover the style that
             feels most honest to me.
           </p>
@@ -185,7 +194,215 @@
   </main>
 
   <footer>
-    <p>© 2026 RobaLens. — A personal photography journal.</p>
+    <p data-i18n="footerText">© 2026 RobaLens. — A personal photography journal.</p>
   </footer>
+
+  <script>
+    const translations = {
+      en: {
+        navAbout: "About",
+        navPortfolio: "Portfolio",
+        navJournal: "Journal",
+        heroEyebrow: "Visual stories by Rodrigue Nzambi",
+        heroTitle: "Photography, people, places & moments worth remembering.",
+        heroText: "RobaLens. is my creative space for sharing portraits, lifestyle moments, events, and the small stories I capture through my lens.",
+        exploreBtn: "Explore the Work",
+        journalBtn: "Read the Journal",
+        latestCollection: "Latest collection",
+        lifestyleMoments: "Lifestyle moments",
+        clickView: "Click to view a few recent shots.",
+        aboutEyebrow: "About",
+        aboutTitle: "A personal visual journal",
+        aboutText1: "I started carrying a camera because I enjoyed documenting the people and moments around me. Over time, photography became a way to slow down, notice details, and tell stories without needing too many words.",
+        aboutText2: "This website is not a shop or a booking page. It is a place where I collect my favorite images, experiments, memories, and creative progress.",
+        portfolioEyebrow: "Portfolio",
+        collectionsTitle: "Collections",
+        collectionsIntro: "Browse the different kinds of moments I enjoy capturing.",
+        lifestyleTitle: "Lifestyle",
+        lifestyleDesc: "Natural moments, movement, street energy, and everyday stories.",
+        portraitsTitle: "Portraits",
+        portraitsDesc: "People, expressions, confidence, personality, and quiet emotion.",
+        eventsTitle: "Events",
+        eventsDesc: "Celebrations, gatherings, details, and memories with atmosphere.",
+        journalTitle: "Journal",
+        journalDesc: "Short notes, behind-the-scenes thoughts, and photo stories.",
+        collectionOne: "Collection 01",
+        collectionTwo: "Collection 02",
+        collectionThree: "Collection 03",
+        lifestyleIntro: "A small collection of relaxed portraits, everyday scenes, and spontaneous moments. Swipe or scroll sideways to explore.",
+        portraitsNote: "Portrait work will live here soon. For now, this section is a reminder to keep experimenting with light, expression, and personality.",
+        eventsNote: "Event stories will be added here as the collection grows — birthdays, gatherings, celebrations, and real moments with people.",
+        journalHeading: "Notes from behind the lens",
+        entryOne: "Entry 01",
+        entryTwo: "Entry 02",
+        entryThree: "Entry 03",
+        journalOneTitle: "Learning to see differently",
+        journalOneText: "Photography has made me pay attention to small details: light on a face, movement in a street, and quiet moments between people.",
+        journalTwoTitle: "Friends, family & practice",
+        journalTwoText: "Most of my favorite images start casually — no big setup, just someone being themselves while I try to catch the feeling.",
+        journalThreeTitle: "Building the eye",
+        journalThreeText: "This space will grow as I shoot more, learn more, and discover the style that feels most honest to me.",
+        footerText: "© 2026 RobaLens. — A personal photography journal."
+      },
+
+      fr: {
+        navAbout: "À propos",
+        navPortfolio: "Portfolio",
+        navJournal: "Journal",
+        heroEyebrow: "Histoires visuelles par Rodrigue Nzambi",
+        heroTitle: "Photographie, personnes, lieux et moments à retenir.",
+        heroText: "RobaLens. est mon espace créatif pour partager des portraits, des moments de vie, des événements et les petites histoires que je capture avec mon objectif.",
+        exploreBtn: "Voir le travail",
+        journalBtn: "Lire le journal",
+        latestCollection: "Dernière collection",
+        lifestyleMoments: "Moments lifestyle",
+        clickView: "Cliquez pour voir quelques photos récentes.",
+        aboutEyebrow: "À propos",
+        aboutTitle: "Un journal visuel personnel",
+        aboutText1: "J’ai commencé à porter un appareil photo parce que j’aimais documenter les personnes et les moments autour de moi. Avec le temps, la photographie est devenue une façon de ralentir, remarquer les détails et raconter des histoires sans trop de mots.",
+        aboutText2: "Ce site n’est pas une boutique ni une page de réservation. C’est un endroit où je rassemble mes images préférées, mes expériences, mes souvenirs et mon évolution créative.",
+        portfolioEyebrow: "Portfolio",
+        collectionsTitle: "Collections",
+        collectionsIntro: "Parcourez les différents types de moments que j’aime capturer.",
+        lifestyleTitle: "Lifestyle",
+        lifestyleDesc: "Moments naturels, mouvement, énergie de la rue et histoires du quotidien.",
+        portraitsTitle: "Portraits",
+        portraitsDesc: "Personnes, expressions, confiance, personnalité et émotion douce.",
+        eventsTitle: "Événements",
+        eventsDesc: "Célébrations, rencontres, détails et souvenirs avec atmosphère.",
+        journalTitle: "Journal",
+        journalDesc: "Notes courtes, coulisses et histoires photographiques.",
+        collectionOne: "Collection 01",
+        collectionTwo: "Collection 02",
+        collectionThree: "Collection 03",
+        lifestyleIntro: "Une petite collection de portraits détendus, de scènes du quotidien et de moments spontanés. Faites glisser ou défilez sur le côté pour explorer.",
+        portraitsNote: "Les portraits seront ajoutés ici bientôt. Pour l’instant, cette section me rappelle de continuer à expérimenter avec la lumière, l’expression et la personnalité.",
+        eventsNote: "Les histoires d’événements seront ajoutées ici au fur et à mesure — anniversaires, rencontres, célébrations et vrais moments avec les gens.",
+        journalHeading: "Notes derrière l’objectif",
+        entryOne: "Entrée 01",
+        entryTwo: "Entrée 02",
+        entryThree: "Entrée 03",
+        journalOneTitle: "Apprendre à voir autrement",
+        journalOneText: "La photographie m’a appris à faire attention aux petits détails : la lumière sur un visage, le mouvement dans la rue et les moments calmes entre les personnes.",
+        journalTwoTitle: "Amis, famille et pratique",
+        journalTwoText: "La plupart de mes images préférées commencent simplement — sans grand décor, juste quelqu’un qui reste lui-même pendant que j’essaie de capturer le ressenti.",
+        journalThreeTitle: "Construire le regard",
+        journalThreeText: "Cet espace grandira au fur et à mesure que je photographie, que j’apprends et que je découvre le style qui me semble le plus honnête.",
+        footerText: "© 2026 RobaLens. — Un journal photographique personnel."
+      },
+
+      ro: {
+        navAbout: "Despre",
+        navPortfolio: "Portofoliu",
+        navJournal: "Jurnal",
+        heroEyebrow: "Povești vizuale de Rodrigue Nzambi",
+        heroTitle: "Fotografie, oameni, locuri și momente de păstrat.",
+        heroText: "RobaLens. este spațiul meu creativ unde împărtășesc portrete, momente lifestyle, evenimente și micile povești pe care le surprind prin obiectiv.",
+        exploreBtn: "Explorează lucrările",
+        journalBtn: "Citește jurnalul",
+        latestCollection: "Cea mai nouă colecție",
+        lifestyleMoments: "Momente lifestyle",
+        clickView: "Click pentru a vedea câteva fotografii recente.",
+        aboutEyebrow: "Despre",
+        aboutTitle: "Un jurnal vizual personal",
+        aboutText1: "Am început să port o cameră cu mine pentru că îmi plăcea să documentez oamenii și momentele din jurul meu. În timp, fotografia a devenit o modalitate de a încetini, de a observa detalii și de a spune povești fără prea multe cuvinte.",
+        aboutText2: "Acest website nu este un magazin sau o pagină de rezervări. Este un loc unde adun imaginile mele preferate, experimentele, amintirile și progresul meu creativ.",
+        portfolioEyebrow: "Portofoliu",
+        collectionsTitle: "Colecții",
+        collectionsIntro: "Explorează tipurile de momente pe care îmi place să le surprind.",
+        lifestyleTitle: "Lifestyle",
+        lifestyleDesc: "Momente naturale, mișcare, energie urbană și povești de zi cu zi.",
+        portraitsTitle: "Portrete",
+        portraitsDesc: "Oameni, expresii, încredere, personalitate și emoție liniștită.",
+        eventsTitle: "Evenimente",
+        eventsDesc: "Sărbători, întâlniri, detalii și amintiri cu atmosferă.",
+        journalTitle: "Jurnal",
+        journalDesc: "Note scurte, gânduri din culise și povești fotografice.",
+        collectionOne: "Colecția 01",
+        collectionTwo: "Colecția 02",
+        collectionThree: "Colecția 03",
+        lifestyleIntro: "O mică colecție de portrete relaxate, scene de zi cu zi și momente spontane. Glisează sau derulează lateral pentru a explora.",
+        portraitsNote: "Portretele vor fi adăugate aici curând. Pentru moment, această secțiune îmi amintește să continui să experimentez cu lumina, expresia și personalitatea.",
+        eventsNote: "Poveștile de la evenimente vor fi adăugate aici pe măsură ce colecția crește — aniversări, întâlniri, sărbători și momente reale cu oameni.",
+        journalHeading: "Note din spatele obiectivului",
+        entryOne: "Intrarea 01",
+        entryTwo: "Intrarea 02",
+        entryThree: "Intrarea 03",
+        journalOneTitle: "Învăț să văd diferit",
+        journalOneText: "Fotografia m-a făcut să observ detalii mici: lumina pe un chip, mișcarea pe stradă și momentele liniștite dintre oameni.",
+        journalTwoTitle: "Prieteni, familie și practică",
+        journalTwoText: "Cele mai multe imagini preferate încep simplu — fără decor mare, doar cineva fiind natural, iar eu încercând să surprind sentimentul.",
+        journalThreeTitle: "Construirea privirii",
+        journalThreeText: "Acest spațiu va crește pe măsură ce fotografiez mai mult, învăț mai mult și descopăr stilul care mi se pare cel mai sincer.",
+        footerText: "© 2026 RobaLens. — Un jurnal fotografic personal."
+      },
+
+      de: {
+        navAbout: "Über mich",
+        navPortfolio: "Portfolio",
+        navJournal: "Journal",
+        heroEyebrow: "Visuelle Geschichten von Rodrigue Nzambi",
+        heroTitle: "Fotografie, Menschen, Orte und Momente zum Erinnern.",
+        heroText: "RobaLens. ist mein kreativer Raum, in dem ich Porträts, Lifestyle-Momente, Events und kleine Geschichten teile, die ich durch meine Linse festhalte.",
+        exploreBtn: "Arbeiten ansehen",
+        journalBtn: "Journal lesen",
+        latestCollection: "Neueste Sammlung",
+        lifestyleMoments: "Lifestyle-Momente",
+        clickView: "Klicken, um einige aktuelle Fotos zu sehen.",
+        aboutEyebrow: "Über mich",
+        aboutTitle: "Ein persönliches visuelles Journal",
+        aboutText1: "Ich begann, eine Kamera mitzunehmen, weil ich gerne die Menschen und Momente um mich herum dokumentierte. Mit der Zeit wurde Fotografie für mich eine Art, langsamer zu werden, Details zu sehen und Geschichten ohne viele Worte zu erzählen.",
+        aboutText2: "Diese Website ist kein Shop und keine Buchungsseite. Sie ist ein Ort, an dem ich meine Lieblingsbilder, Experimente, Erinnerungen und meinen kreativen Fortschritt sammle.",
+        portfolioEyebrow: "Portfolio",
+        collectionsTitle: "Sammlungen",
+        collectionsIntro: "Entdecke die verschiedenen Arten von Momenten, die ich gerne festhalte.",
+        lifestyleTitle: "Lifestyle",
+        lifestyleDesc: "Natürliche Momente, Bewegung, Straßenenergie und Alltagsgeschichten.",
+        portraitsTitle: "Porträts",
+        portraitsDesc: "Menschen, Ausdrücke, Selbstvertrauen, Persönlichkeit und stille Emotion.",
+        eventsTitle: "Events",
+        eventsDesc: "Feiern, Treffen, Details und Erinnerungen mit Atmosphäre.",
+        journalTitle: "Journal",
+        journalDesc: "Kurze Notizen, Gedanken hinter den Kulissen und Fotogeschichten.",
+        collectionOne: "Sammlung 01",
+        collectionTwo: "Sammlung 02",
+        collectionThree: "Sammlung 03",
+        lifestyleIntro: "Eine kleine Sammlung entspannter Porträts, Alltagsszenen und spontaner Momente. Wische oder scrolle seitwärts, um sie zu entdecken.",
+        portraitsNote: "Porträts werden hier bald hinzugefügt. Im Moment erinnert mich dieser Abschnitt daran, weiter mit Licht, Ausdruck und Persönlichkeit zu experimentieren.",
+        eventsNote: "Eventgeschichten werden hier hinzugefügt, während die Sammlung wächst — Geburtstage, Treffen, Feiern und echte Momente mit Menschen.",
+        journalHeading: "Notizen hinter der Linse",
+        entryOne: "Eintrag 01",
+        entryTwo: "Eintrag 02",
+        entryThree: "Eintrag 03",
+        journalOneTitle: "Anders sehen lernen",
+        journalOneText: "Fotografie hat mich gelehrt, auf kleine Details zu achten: Licht auf einem Gesicht, Bewegung auf der Straße und ruhige Momente zwischen Menschen.",
+        journalTwoTitle: "Freunde, Familie und Übung",
+        journalTwoText: "Die meisten meiner Lieblingsbilder entstehen ganz spontan — ohne großes Setup, nur jemand, der einfach er selbst ist, während ich versuche, das Gefühl einzufangen.",
+        journalThreeTitle: "Den Blick entwickeln",
+        journalThreeText: "Dieser Raum wird wachsen, während ich mehr fotografiere, mehr lerne und den Stil finde, der sich für mich am ehrlichsten anfühlt.",
+        footerText: "© 2026 RobaLens. — Ein persönliches Fotografie-Journal."
+      }
+    };
+
+    const languageSelect = document.getElementById("languageSelect");
+
+    function setLanguage(language) {
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.getAttribute("data-i18n");
+        element.textContent = translations[language][key];
+      });
+
+      document.documentElement.lang = language;
+      localStorage.setItem("selectedLanguage", language);
+    }
+
+    const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
+    languageSelect.value = savedLanguage;
+    setLanguage(savedLanguage);
+
+    languageSelect.addEventListener("change", (event) => {
+      setLanguage(event.target.value);
+    });
+  </script>
 </body>
 </html>
