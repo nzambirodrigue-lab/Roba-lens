@@ -17,12 +17,14 @@
         <a href="#about" data-i18n="navAbout">About</a>
         <a href="#portfolio" data-i18n="navPortfolio">Portfolio</a>
 
-        <div class="language-switcher" aria-label="Language selector">
-          <button type="button" class="language-btn" data-language="en">🇬🇧 EN</button>
-          <button type="button" class="language-btn" data-language="nl">🇳🇱 NL</button>
-          <button type="button" class="language-btn" data-language="fr">🇫🇷 FR</button>
-          <button type="button" class="language-btn" data-language="ro">🇷🇴 RO</button>
-          <button type="button" class="language-btn" data-language="de">🇩🇪 DE</button>
+        <div class="language-switcher">
+          <select id="languageSelect" aria-label="Choose language">
+            <option value="en">🇬🇧 English</option>
+            <option value="nl">🇳🇱 Nederlands</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="ro">🇷🇴 Română</option>
+            <option value="de">🇩🇪 Deutsch</option>
+          </select>
         </div>
       </div>
     </nav>
@@ -41,13 +43,13 @@
 
         <div class="hero-actions">
           <a class="button primary" href="#portfolio" data-i18n="exploreBtn">Explore the Work</a>
-          <a class="button secondary" href="#lifestyle" data-i18n="latestBtn">Latest Photos</a>
+          <a class="button secondary" href="#portraits" data-i18n="latestBtn">Latest Photos</a>
         </div>
       </div>
 
-      <a class="hero-card" href="#lifestyle">
+      <a class="hero-card" href="#portraits">
         <p class="eyebrow" data-i18n="latestCollection">Latest collection</p>
-        <h2 data-i18n="lifestyleMoments">Lifestyle moments</h2>
+        <h2 data-i18n="portraitMoments">Portrait moments</h2>
         <p data-i18n="clickView">Click to view a few recent shots.</p>
       </a>
     </section>
@@ -115,22 +117,23 @@
       <div class="photo-slider" aria-label="Lifestyle photo collection">
         <img src="images/lifestyles/lifestyles-01.jpg" alt="Lifestyle portrait by RobaLens.">
         <img src="images/lifestyles/lifestyles-02.jpg" alt="Lifestyle moment by RobaLens.">
-        <img src="images/lifestyles/lifestyles-03.jpg" alt="Lifestyle moment by RobaLens.">
-        <img src="images/lifestyles/lifestyles-04.jpg" alt="Lifestyle moment by RobaLens.">
       </div>
     </section>
 
-    <section id="portraits" class="section split-section">
-      <div>
+    <section id="portraits" class="section">
+      <div class="section-heading">
         <p class="eyebrow" data-i18n="collectionTwo">Collection 02</p>
         <h2 data-i18n="portraitsTitle">Portraits</h2>
+        <p class="section-intro" data-i18n="portraitsIntro">
+          Portraits, expressions, quiet confidence, and personal moments through the lens.
+          Swipe or scroll sideways to explore.
+        </p>
       </div>
 
-      <div class="note-card">
-        <p data-i18n="portraitsNote">
-          Portrait work will live here soon. For now, this section is a reminder to keep
-          experimenting with light, expression, and personality.
-        </p>
+      <div class="photo-slider" aria-label="Portrait photo collection">
+        <img src="images/portraits/portraits-01.jpg" alt="Portrait photography by RobaLens.">
+        <img src="images/portraits/portraits-02.jpg" alt="Portrait photography by RobaLens.">
+        <img src="images/portraits/portraits-03.jpg" alt="Portrait photography by RobaLens.">
       </div>
     </section>
 
@@ -164,7 +167,7 @@
         exploreBtn: "Explore the Work",
         latestBtn: "Latest Photos",
         latestCollection: "Latest collection",
-        lifestyleMoments: "Lifestyle moments",
+        portraitMoments: "Portrait moments",
         clickView: "Click to view a few recent shots.",
         aboutEyebrow: "About",
         aboutTitle: "Personal visual stories",
@@ -177,13 +180,13 @@
         lifestyleDesc: "Natural moments, movement, street energy, and everyday stories.",
         portraitsTitle: "Portraits",
         portraitsDesc: "People, expressions, confidence, personality, and quiet emotion.",
+        portraitsIntro: "Portraits, expressions, quiet confidence, and personal moments through the lens. Swipe or scroll sideways to explore.",
         eventsTitle: "Events",
         eventsDesc: "Celebrations, gatherings, details, and memories with atmosphere.",
         collectionOne: "Collection 01",
         collectionTwo: "Collection 02",
         collectionThree: "Collection 03",
         lifestyleIntro: "A small collection of relaxed portraits, everyday scenes, and spontaneous moments. Swipe or scroll sideways to explore.",
-        portraitsNote: "Portrait work will live here soon. For now, this section is a reminder to keep experimenting with light, expression, and personality.",
         eventsNote: "Event stories will be added here as the collection grows — birthdays, gatherings, celebrations, and real moments with people.",
         footerText: "© 2026 RobaLens. — Personal photography stories."
       },
@@ -197,7 +200,7 @@
         exploreBtn: "Bekijk het werk",
         latestBtn: "Nieuwste foto's",
         latestCollection: "Nieuwste collectie",
-        lifestyleMoments: "Lifestylemomenten",
+        portraitMoments: "Portretmomenten",
         clickView: "Klik om een paar recente foto’s te bekijken.",
         aboutEyebrow: "Over",
         aboutTitle: "Persoonlijke visuele verhalen",
@@ -210,13 +213,13 @@
         lifestyleDesc: "Natuurlijke momenten, beweging, straatenergie en alledaagse verhalen.",
         portraitsTitle: "Portretten",
         portraitsDesc: "Mensen, expressies, zelfvertrouwen, persoonlijkheid en stille emotie.",
+        portraitsIntro: "Portretten, expressies, rustige zelfverzekerdheid en persoonlijke momenten door de lens. Swipe of scroll opzij om te verkennen.",
         eventsTitle: "Evenementen",
         eventsDesc: "Vieringen, bijeenkomsten, details en herinneringen met sfeer.",
         collectionOne: "Collectie 01",
         collectionTwo: "Collectie 02",
         collectionThree: "Collectie 03",
         lifestyleIntro: "Een kleine collectie van ontspannen portretten, alledaagse scènes en spontane momenten. Swipe of scroll opzij om te verkennen.",
-        portraitsNote: "Portretwerk komt hier binnenkort. Voor nu is deze sectie een herinnering om te blijven experimenteren met licht, expressie en persoonlijkheid.",
         eventsNote: "Evenementverhalen worden hier toegevoegd naarmate de collectie groeit — verjaardagen, bijeenkomsten, vieringen en echte momenten met mensen.",
         footerText: "© 2026 RobaLens. — Persoonlijke fotografieverhalen."
       },
@@ -230,7 +233,7 @@
         exploreBtn: "Voir le travail",
         latestBtn: "Photos récentes",
         latestCollection: "Dernière collection",
-        lifestyleMoments: "Moments lifestyle",
+        portraitMoments: "Moments portrait",
         clickView: "Cliquez pour voir quelques photos récentes.",
         aboutEyebrow: "À propos",
         aboutTitle: "Histoires visuelles personnelles",
@@ -243,13 +246,13 @@
         lifestyleDesc: "Moments naturels, mouvement, énergie de la rue et histoires du quotidien.",
         portraitsTitle: "Portraits",
         portraitsDesc: "Personnes, expressions, confiance, personnalité et émotion douce.",
+        portraitsIntro: "Portraits, expressions, confiance tranquille et moments personnels à travers l’objectif. Faites glisser ou défilez sur le côté pour explorer.",
         eventsTitle: "Événements",
         eventsDesc: "Célébrations, rencontres, détails et souvenirs avec atmosphère.",
         collectionOne: "Collection 01",
         collectionTwo: "Collection 02",
         collectionThree: "Collection 03",
         lifestyleIntro: "Une petite collection de portraits détendus, de scènes du quotidien et de moments spontanés. Faites glisser ou défilez sur le côté pour explorer.",
-        portraitsNote: "Les portraits seront ajoutés ici bientôt. Pour l’instant, cette section me rappelle de continuer à expérimenter avec la lumière, l’expression et la personnalité.",
         eventsNote: "Les histoires d’événements seront ajoutées ici au fur et à mesure — anniversaires, rencontres, célébrations et vrais moments avec les gens.",
         footerText: "© 2026 RobaLens. — Histoires photographiques personnelles."
       },
@@ -263,7 +266,7 @@
         exploreBtn: "Explorează lucrările",
         latestBtn: "Fotografii recente",
         latestCollection: "Cea mai nouă colecție",
-        lifestyleMoments: "Momente lifestyle",
+        portraitMoments: "Momente de portret",
         clickView: "Click pentru a vedea câteva fotografii recente.",
         aboutEyebrow: "Despre",
         aboutTitle: "Povești vizuale personale",
@@ -276,13 +279,13 @@
         lifestyleDesc: "Momente naturale, mișcare, energie urbană și povești de zi cu zi.",
         portraitsTitle: "Portrete",
         portraitsDesc: "Oameni, expresii, încredere, personalitate și emoție liniștită.",
+        portraitsIntro: "Portrete, expresii, încredere liniștită și momente personale prin obiectiv. Glisează sau derulează lateral pentru a explora.",
         eventsTitle: "Evenimente",
         eventsDesc: "Sărbători, întâlniri, detalii și amintiri cu atmosferă.",
         collectionOne: "Colecția 01",
         collectionTwo: "Colecția 02",
         collectionThree: "Colecția 03",
         lifestyleIntro: "O mică colecție de portrete relaxate, scene de zi cu zi și momente spontane. Glisează sau derulează lateral pentru a explora.",
-        portraitsNote: "Portretele vor fi adăugate aici curând. Pentru moment, această secțiune îmi amintește să continui să experimentez cu lumina, expresia și personalitatea.",
         eventsNote: "Poveștile de la evenimente vor fi adăugate aici pe măsură ce colecția crește — aniversări, întâlniri, sărbători și momente reale cu oameni.",
         footerText: "© 2026 RobaLens. — Povești fotografice personale."
       },
@@ -296,7 +299,7 @@
         exploreBtn: "Arbeiten ansehen",
         latestBtn: "Neueste Fotos",
         latestCollection: "Neueste Sammlung",
-        lifestyleMoments: "Lifestyle-Momente",
+        portraitMoments: "Porträtmomente",
         clickView: "Klicken, um einige aktuelle Fotos zu sehen.",
         aboutEyebrow: "Über mich",
         aboutTitle: "Persönliche visuelle Geschichten",
@@ -309,19 +312,19 @@
         lifestyleDesc: "Natürliche Momente, Bewegung, Straßenenergie und Alltagsgeschichten.",
         portraitsTitle: "Porträts",
         portraitsDesc: "Menschen, Ausdrücke, Selbstvertrauen, Persönlichkeit und stille Emotion.",
+        portraitsIntro: "Porträts, Ausdrücke, ruhiges Selbstvertrauen und persönliche Momente durch die Linse. Wische oder scrolle seitwärts, um sie zu entdecken.",
         eventsTitle: "Events",
         eventsDesc: "Feiern, Treffen, Details und Erinnerungen mit Atmosphäre.",
         collectionOne: "Sammlung 01",
         collectionTwo: "Sammlung 02",
         collectionThree: "Sammlung 03",
         lifestyleIntro: "Eine kleine Sammlung entspannter Porträts, Alltagsszenen und spontaner Momente. Wische oder scrolle seitwärts, um sie zu entdecken.",
-        portraitsNote: "Porträts werden hier bald hinzugefügt. Im Moment erinnert mich dieser Abschnitt daran, weiter mit Licht, Ausdruck und Persönlichkeit zu experimentieren.",
         eventsNote: "Eventgeschichten werden hier hinzugefügt, während die Sammlung wächst — Geburtstage, Treffen, Feiern und echte Momente mit Menschen.",
         footerText: "© 2026 RobaLens. — Persönliche Fotografie-Geschichten."
       }
     };
 
-    const languageButtons = document.querySelectorAll(".language-btn");
+    const languageSelect = document.getElementById("languageSelect");
 
     function setLanguage(language) {
       document.querySelectorAll("[data-i18n]").forEach((element) => {
@@ -331,19 +334,14 @@
 
       document.documentElement.lang = language;
       localStorage.setItem("selectedLanguage", language);
-
-      languageButtons.forEach((button) => {
-        button.classList.toggle("active", button.dataset.language === language);
-      });
     }
 
     const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
+    languageSelect.value = savedLanguage;
     setLanguage(savedLanguage);
 
-    languageButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        setLanguage(button.dataset.language);
-      });
+    languageSelect.addEventListener("change", (event) => {
+      setLanguage(event.target.value);
     });
   </script>
 </body>

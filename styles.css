@@ -369,3 +369,14 @@ footer {
   color: white;
   border-color: transparent;
 }
+.language-switcher select {
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
